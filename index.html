@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Student Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <h1>JavaScript Student Management</h1>
+
+        <!-- TASK 1: Button changes paragraph -->
+        <section>
+            <h2>1. Change Paragraph Text</h2>
+
+            <p id="message">Welcome to JavaScript!</p>
+
+            <button onclick="changeText()">Click Me</button>
+        </section>
+
+
+        <!-- TASK 2, 3 AND 4: Student Form -->
+        <section>
+            <h2>2. Student Registration Form</h2>
+
+            <form id="studentForm">
+
+                <label>Student Name:</label>
+                <input type="text" id="name" required>
+
+                <label>Email:</label>
+                <input type="email" id="email" required>
+
+                <label>Age:</label>
+                <input type="number" id="age" min="1" required>
+
+                <button type="submit">Submit Student</button>
+
+            </form>
+
+            <h3>Submitted Student Information</h3>
+
+            <div id="studentDetails"></div>
+        </section>
+
+
+        <!-- TASK 5: Array Methods -->
+        <section>
+            <h2>3. Student Array and Array Methods</h2>
+
+            <h3>All Student Names (map)</h3>
+            <div id="studentNames"></div>
+
+            <h3>Student Names and Marks (map)</h3>
+            <div id="studentMarks"></div>
+
+            <h3>Students Taking Python (filter)</h3>
+            <div id="pythonStudents"></div>
+
+            <h3>Students Below 21 Years (filter)</h3>
+            <div id="youngStudents"></div>
+
+        </section>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
